@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Vietnamese Women's Day💝</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/Tanh2.png">
+</head>
+<body>
+    <main class="app-shell">
+        <section class="screen passcode-screen" id="passcodeScreen" aria-labelledby="pageTitle">
+            <div class="passcode-card">
+                <div class="memory-photo" role="img" aria-label="Ảnh kỷ niệm của hai bạn">
+                    <div class="photo-stack">
+                        <img class="photo-placeholder" src="images/Tanh.JPG" alt="Ảnh kỷ niệm của chúng mình">
+                        <img class="photo-sticker" src="images/Sticker (1).png" alt="">
+                    </div>
+                </div>
+                <div class="lock-panel">
+                    <p class="eyebrow">MỘT CÂU HỎI NHỎ</p>
+                    <h1 id="pageTitle">Chúng mình quen nhau<br>ngày nào nhỉ?</h1>
+                    <p class="hint">Nhập ngày đặc biệt theo định dạng <strong>ngày / tháng / năm</strong></p>
+                    <div class="date-display" id="dateDisplay" aria-live="polite">DD / MM / YYYY</div>
+                    <p class="error-message" id="errorMessage" aria-live="polite"></p>
+                    <div class="keypad" aria-label="Bàn phím nhập ngày">
+                        <button type="button" data-digit="1">1</button><button type="button" data-digit="2">2</button><button type="button" data-digit="3">3</button>
+                        <button type="button" data-digit="4">4</button><button type="button" data-digit="5">5</button><button type="button" data-digit="6">6</button>
+                        <button type="button" data-digit="7">7</button><button type="button" data-digit="8">8</button><button type="button" data-digit="9">9</button>
+                        <button type="button" class="key-clear" id="clearDate" aria-label="Xóa ngày">⌫</button><button type="button" data-digit="0">0</button><button type="button" class="key-enter" id="submitDate" aria-label="Xác nhận">♡</button>
+                    </div>
+                    <p class="keypad-note">Chạm từng số để mở khóa món quà 💌</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="screen gift-screen" id="giftScreen" hidden>
+            <p class="eyebrow">MẬT MÃ CHÍNH XÁC ✨</p>
+            <h1>Hello Helloooooo, Gửi Vợ Iu Của Anhhh 💗</h1>
+            <p class="intro">20/10 Anh Có Một Món Quà Bí Mật Dành Riêng Cho Em...</p>
+            <div class="gift" aria-hidden="true"><img src="images/gift.png" alt=""></div>
+            <button class="open-gift" id="openGift" type="button">Mở Quà Ở Đây Nhaaa! 💌</button>
+            <div class="surprise" id="surprise" hidden>
+                <h2>Món quà này dành riêng cho mình em thôi đấyyyy 💗</h2>
+                <p>Cảm ơn em vì đã xuất hiện trong cuộc sống của anh 1 lần nữa 💕</p>
+                <p>Chúc em ngày 20/10 thật vui vẻ và hạnh phúc!!</p>
+                <div class="heart" aria-hidden="true">💝</div>
+            </div>
+        </section>
+    </main>
+    <canvas class="fireworks-canvas" id="fireworksCanvas" aria-hidden="true" hidden></canvas>
+    <div class="floating-stickers" id="floatingStickers" aria-hidden="true" hidden>
+        <img src="images/Tanh2.png" alt="">
+        <img src="images/Tanh3.png" alt="">
+        <img src="images/Tanh4.png" alt="">
+        <img src="images/Tanh5.png" alt="">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
