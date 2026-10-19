@@ -216,7 +216,7 @@ document.addEventListener("keydown", (event) => {
 
 openGiftButton.addEventListener("click", () => {
     surprise.hidden = false;
-    document.querySelector(".gift").classList.add("opened");
+    document.querySelector(".gift img").src = "images/Gift2.png";
     openGiftButton.textContent = "Món quà của em đây! 💗";
     openGiftButton.disabled = true;
 });

@@ -184,8 +184,6 @@ h1 { margin: 0; font-size: clamp(25px, 3.3vw, 38px); line-height: 1.18; }
 .intro { color: #ffe0d9; line-height: 1.7; }
 .gift { margin: 26px 0; min-height: 190px; animation: float 2.5s ease-in-out infinite; }
 .gift img { display: block; width: clamp(160px, 20vw, 250px); height: 190px; object-fit: contain; margin: 0 auto; }
-.gift.opened img { display: none; }
-.gift.opened::after { content: "💝"; display: block; font-size: 100px; line-height: 190px; }
 .open-gift { padding: 15px 28px; border: 0; border-radius: 999px; background: #ffd05c; color: #8e0908; font-size: 16px; font-weight: 700; cursor: pointer; box-shadow: 0 8px 22px #56000055; transition: transform .2s ease, box-shadow .2s ease; }
 .open-gift:hover { transform: translateY(-3px); box-shadow: 0 12px 28px #56000066; }
 .open-gift:active { transform: scale(.97); }
